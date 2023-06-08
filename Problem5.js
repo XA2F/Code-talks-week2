@@ -1,9 +1,8 @@
-//Async/await makes javascript wait until that promise settles and reurns it's result.
-
+//Async/await makes Javascript wait until that promise settles and returns its result.
 const { Readable } = require("stream");
 
-//The await keyword is only valid inside an async function.
-// pros are it makes it more Readable, handles erros well, organzies our code and etc...
+// The await keyword is only valid inside an async function.
+// The pros are that it makes it more readable, handles errors well, organizes our code, etc.
 
 async function f() {
   let promise = new Promise((resolve, reject) => {
@@ -14,5 +13,3 @@ async function f() {
 
   alert(result); // "done!"
 }
-
-f();
